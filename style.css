@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(./images/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #ffffff;
+}
+
+.clock {
+  width: 100%;
+  max-width: 370px;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.7), 0px 10px 20px rgba(0, 0, 0, 11);
+  height: 24vh;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.clock h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.clock span{
+    position: relative;
+    top: -11%;
+    left: 7px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@media screen and (min-width:275px) and (max-width:400px){
+    .clock{
+        max-width: 270px;
+    }
+    .clock h1{
+        font-size: 2.4rem;
+    }
+    .clock span{
+        font-size: 17px;
+        top: -4%;
+    }
+}
+
+@media screen and (max-width:274px){
+    .clock{
+        max-width: 210px;
+    }
+    .clock h1{
+        font-size: 1.7rem;
+    }
+    .clock span{
+        font-size: 15px;
+        top: -4%;
+    }
+}
